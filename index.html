@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adoptly</title>
+  <title>PetQuest</title>
   <link rel="icon" href="./resources/c1-assets/logo-footer.png">
 
   <!-- Google Font CDN -->
@@ -34,6 +34,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'primary-bg-clr': '#FFF9F4',
+            'primary-btn-clr': '#FFDC26',
           }
         }
       }
@@ -49,12 +51,33 @@
     .font-adlam-display {
       font-family: "ADLaM Display", serif;
     }
+
+    @keyframes fadeInUpContinuous {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      50% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    .fade-in-up-continuous {
+      animation: fadeInUpContinuous 3s ease-in-out infinite;
+    }
   </style>
 </head>
 
 <body>
   <!-- Header -->
-  <header class="mx-auto pb-[1.5rem] lg:pb-[3rem]">
+  <header class="mx-auto">
     <nav class="">
       <div class="navbar bg-primary-bg-clr px-5 lg:px-[6.25rem]">
         <div class="navbar-start">
@@ -71,6 +94,7 @@
               <li><a>Contact Us</a></li>
             </ul>
           </div>
+
           <a class="flex items-center gap-3 text-xl font-normal font-adlam-display"> <img
               class="max-w-[2.75rem] max-h-[2.75rem] md:flex" src="./resources/c1-assets/logo-header.png"
               alt="logo-header">PetQuest</a>
@@ -123,6 +147,26 @@
         </div>
       </div>
     </nav>
+
+    <!-- Banner -->
+    <div class="py-[1.5rem] lg:py-[3rem] px-5 lg:px-[6.25rem]">
+      <div class="lg:absolute flex flex-col gap-5 lg:max-w-[42.5rem] fade-in-up-continuous">
+        <div class="flex flex-col gap-5 lg:max-w-[42.5rem]">
+          <h1 class="font-bold font-adlam-display text-[3.5rem]">Pamper Your Pet,<br>Because They Deserve<br>the Best
+          </h1>
+          <p class="font-normal text-[1.25rem]">Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!</p>
+        </div>
+
+        <div class="">
+          <button class="text-black hover:scale-110 hover:cursor-pointer btn bg-primary-btn-clr">Find a pet</button>
+        </div>
+      </div>
+
+      <div class="">
+        <img src="./resources/c1-assets/cat-big.png" alt="cat-big">
+      </div>
+    </div>
   </header>
 
   <!-- Main -->
