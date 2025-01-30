@@ -36,6 +36,7 @@
             clifford: '#da373d',
             'primary-bg-clr': '#FFF9F4',
             'primary-btn-clr': '#FFDC26',
+            'card-bg-clr': '#F9DF8A',
           }
         }
       }
@@ -77,8 +78,8 @@
 
 <body>
   <!-- Header -->
-  <header class="mx-auto ">
-    <nav class="flex justify-between py-5 px-5 lg:px-[6.25rem] bg-primary-bg-clr drop-shadow-md md:drop-shadow-none">
+  <header class="mx-auto">
+    <nav class="flex justify-between py-5 px-5 lg:px-[5.75rem] bg-primary-bg-clr drop-shadow-md md:drop-shadow-none">
       <div class="flex items-center gap-3 text-xl font-normal font-adlam-display">
         <img class="max-w-[2.75rem] max-h-[2.75rem] md:flex" src="./resources/c1-assets/logo-header.png"
           alt="logo-header">
@@ -87,9 +88,9 @@
 
       <div class="items-center hidden md:flex">
         <ul class="flex gap-5 font-bold">
-          <li><a>Find a pet</a></li>
-          <li><a>Breeds</a></li>
-          <li><a>Contact Us</a></li>
+          <li><a class="transition-transform duration-300 hover:cursor-pointer hover:scale-110 hover:drop-shadow-md">Find a pet</a></li>
+          <li><a class="transition-transform duration-300 hover:cursor-pointer hover:scale-110 hover:drop-shadow-md">Breeds</a></li>
+          <li><a class="transition-transform duration-300 hover:drop-shadow-md hover:cursor-pointer hover:scale-110">Contact Us</a></li>
         </ul>
       </div>
 
@@ -139,7 +140,7 @@
     </nav>
 
     <!-- Banner -->
-    <div class="py-[1.5rem] lg:py-[3rem] px-5 lg:px-[6.25rem]">
+    <div class="py-[1.5rem] lg:py-[3rem] px-5 lg:px-[5.75rem]">
       <div class="lg:absolute flex flex-col gap-5 lg:max-w-[42.5rem] fade-in-up-continuous z-10">
         <div class="flex flex-col gap-5 lg:max-w-[42.5rem]">
           <h1 class="font-bold font-adlam-display text-[2.5rem] xl:text-[3rem]">Pamper Your Pet,<br>Because They
@@ -155,7 +156,7 @@
         </div>
       </div>
 
-      <div class="">
+      <div class="flex justify-center">
         <img class="" src="./resources/c1-assets/cat-big.png" alt="cat-big">
       </div>
     </div>
@@ -163,7 +164,88 @@
 
   <!-- Main -->
   <main>
+    <!-- Categories -->
+    <section>
+      <div class="py-[1.5rem] lg:py-[3rem]">
+        <h2 class="font-bold font-adlam-display text-[2rem] px-5 lg:px-[5.75rem]">Browse By Categories</h2>
 
+        <div
+          class="grid grid-cols-2  gap-3 px-5 lg:px-[5.75rem] md:grid-cols-3 lg:grid-cols-6 justify-items-center pt-[1.5rem] md:pt-[3rem]">
+          <div class="card bg-card-bg-clr max-w-[12.5rem] hover:drop-shadow-md hover:cursor-pointer hover:scale-105 transition-transform duration-300">
+            <figure class="px-10 pt-10">
+              <div class="p-2 bg-white rounded-full">
+                <img src="./resources/c1-assets/dog-cartoon.png" alt="dog-cartoon" class="" />
+              </div>
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="font-bold card-title text-[1.25rem]">Dog</h2>
+              <p class="font-medium text-[1rem]">3 Items</p>
+            </div>
+          </div>
+
+          <div class="card bg-card-bg-clr max-w-[12.5rem] hover:drop-shadow-md hover:cursor-pointer hover:scale-105 transition-transform duration-300">
+            <figure class="px-10 pt-10">
+              <div class="p-2 bg-white rounded-full">
+                <img src="./resources/c1-assets/fish-cartoon.png" alt="fish-cartoon" class="" />
+              </div>
+
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="font-bold card-title text-[1.25rem]">Fish</h2>
+              <p class="font-medium text-[1rem]">2 Items</p>
+            </div>
+          </div>
+
+          <div class="card bg-card-bg-clr max-w-[12.5rem] hover:drop-shadow-md hover:cursor-pointer hover:scale-105 transition-transform duration-300">
+            <figure class="px-10 pt-10">
+              <div class="p-2 bg-white rounded-full">
+                <img src="./resources/c1-assets/cat-cartoon.png" alt="cat-cartoon" class="" />
+              </div>
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="font-bold card-title text-[1.25rem]">Cat</h2>
+              <p class="font-medium text-[1rem]">5 Items</p>
+            </div>
+          </div>
+
+          <div class="card bg-card-bg-clr max-w-[12.5rem] hover:drop-shadow-md hover:cursor-pointer hover:scale-105 transition-transform duration-300">
+            <figure class="px-10 pt-10">
+              <div class="p-2 bg-white rounded-full">
+                <img src="./resources/c1-assets/bird-cartoon.png" alt="bird-cartoon" class="" />
+              </div>
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="font-bold card-title text-[1.25rem]">Bird</h2>
+              <p class="font-medium text-[1rem]">4 Items</p>
+            </div>
+          </div>
+
+          <div class="card bg-card-bg-clr max-w-[12.5rem] hover:drop-shadow-md hover:cursor-pointer hover:scale-105 transition-transform duration-300">
+            <figure class="px-10 pt-10">
+              <div class="p-2 bg-white rounded-full">
+                <img src="./resources/c1-assets/mouse-cartoon.png" alt="mouse-cartoon" class="" />
+              </div>
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="font-bold card-title text-[1.25rem]">Small Pet</h2>
+              <p class="font-medium text-[1rem]">7 Items</p>
+            </div>
+          </div>
+
+          <div class="card bg-card-bg-clr max-w-[12.5rem] hover:drop-shadow-md hover:cursor-pointer hover:scale-105 transition-transform duration-300">
+            <figure class="px-10 pt-10">
+              <div class="p-2 bg-white rounded-full">
+                <img src="./resources/c1-assets/rabbit-cartoon.png" alt="rabbit-cartoon" class="" />
+              </div>
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="font-bold card-title text-[1.25rem]">Rabbit</h2>
+              <p class="font-medium text-[1rem]">6 Items</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
