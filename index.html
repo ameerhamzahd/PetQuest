@@ -7,6 +7,11 @@
   <title>PetQuest</title>
   <link rel="icon" href="./resources/c1-assets/logo-footer.png">
 
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Google Font CDN -->
 
   <!-- Sora -->
@@ -603,9 +608,9 @@
     </section>
 
     <!-- Newsletter -->
-    <section>
-      <div class="py-[1.5rem] lg:py-[3rem] px-5 lg:px-[5.75rem]">
-        <div class="hero bg-primary-bg-clr min-h-screen">
+    <section class="">
+      <div class="px-5 lg:px-[5.75rem] -mb-80 lg:-mb-60 z-10 relative">
+        <div class="hero bg-primary-bg-clr min-h-screen rounded-xl">
           <div class="hero-content flex-col lg:flex-row">
             <img src="./resources/c1-assets/cute-pet-mid.png" class="w-full lg:max-w-sm rounded-lg" />
 
@@ -620,12 +625,52 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer bg-card-bg-clr text-base-content px-5 pt-96 pb-40 lg:pt-80 lg:pb-20 lg:px-10">
+    <div class="">
+      <div class="flex items-center gap-3 text-xl font-normal font-adlam-display">
+        <img class="max-w-[2.75rem] max-h-[2.75rem] md:flex" src="./resources/c1-assets/logo-footer.png"
+          alt="logo-header">
+        <a class="">PetQuest</a>
+      </div>
 
+      <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+    </div>
+    <nav>
+      <ul class="flex flex-col gap-5 font-bold">
+        <li><a class="transition-transform duration-300 hover:cursor-pointer hover:scale-110 hover:drop-shadow-md">Find
+            a
+            pet</a></li>
+        <li><a
+            class="transition-transform duration-300 hover:cursor-pointer hover:scale-110 hover:drop-shadow-md">Breeds</a>
+        </li>
+        <li><a
+            class="transition-transform duration-300 hover:drop-shadow-md hover:cursor-pointer hover:scale-110">Contact
+            Us</a></li>
+      </ul>
+    </nav>
+    <nav class="flex flex-col">
+      <h6 class="font-bold">Follow Us</h6>
+      <div class="flex space-x-4">
+        <a href="#" class="text-gray-700 hover:text-gray-900">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </nav>
   </footer>
 </body>
 
